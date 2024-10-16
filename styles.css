@@ -1,0 +1,196 @@
+/* Genel Stil */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #1c1c1c;
+    color: #fff;
+    font-family: 'Rubik', sans-serif;
+}
+
+nav {
+background: #1c1c1c;
+text-align: center;
+}
+
+nav h1 {
+    font-size: 2.65rem;
+    color: #ffffff;
+}
+
+h2,p{
+    color: #ffffff;
+}
+
+
+header .container {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+header h1 {
+    font-size: 2.65rem;
+    margin-bottom: 20px;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-box input {
+    width: 900px;
+    padding: 15px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    border: none;
+    margin-right: 10px;
+}
+
+.search-box button {
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    background: radial-gradient(at 57.45% 50.26%, hsla(227, 95.6%, 35.88%, 1) 0%, hsla(227, 95.6%, 35.88%, 0) 100%), 
+                radial-gradient(at 33.55% 47.28%, hsla(264, 86.44%, 53.73%, 1) 0%, hsla(264, 86.44%, 53.73%, 0) 100%);
+    color: white;
+    cursor: pointer;
+}
+
+.search-box button:hover {
+    background: radial-gradient(at 74.65% 8.85%, hsla(310, 100%, 48.04%, 1) 0%, hsla(310, 100%, 48.04%, 0) 100%);
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px 20px;
+}
+
+.card {
+    width: 300px;
+    height: 400px;
+    background-color: #333;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+.card-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background-image: radial-gradient(at 0.14302216930188738% 61.932809958772104%, hsla(246.7924528301887, 70.66666666666667%, 44.11764705882353%, 1) 0%, hsla(246.7924528301887, 70.66666666666667%, 44.11764705882353%, 0) 100%), radial-gradient(at 98.34014484561035% 62.234396445913376%, hsla(252.97297297297294, 44.047619047619044%, 32.94117647058823%, 1) 0%, hsla(252.97297297297294, 44.047619047619044%, 32.94117647058823%, 0) 100%), radial-gradient(at 8.149083501096666% 7.6045687665112105%, hsla(216.12903225806448, 86.91588785046729%, 20.980392156862745%, 1) 0%, hsla(216.12903225806448, 86.91588785046729%, 20.980392156862745%, 0) 100%), radial-gradient(at 44.03784288931083% 56.678379909106404%, hsla(233.0357142857143, 100%, 21.96078431372549%, 1) 0%, hsla(233.0357142857143, 100%, 21.96078431372549%, 0) 100%), radial-gradient(at 82.16584042296331% 23.099725299655006%, hsla(246.7924528301887, 70.66666666666667%, 44.11764705882353%, 1) 0%, hsla(246.7924528301887, 70.66666666666667%, 44.11764705882353%, 0) 100%), radial-gradient(at 86.7978535271389% 64.94627586362544%, hsla(252.97297297297294, 44.047619047619044%, 32.94117647058823%, 1) 0%, hsla(252.97297297297294, 44.047619047619044%, 32.94117647058823%, 0) 100%), radial-gradient(at 81.0834103778294% 86.21355860910305%, hsla(216.12903225806448, 86.91588785046729%, 20.980392156862745%, 1) 0%, hsla(216.12903225806448, 86.91588785046729%, 20.980392156862745%, 0) 100%), radial-gradient(at 33.792813855829266% 34.79236541770226%, hsla(233.0357142857143, 100%, 21.96078431372549%, 1) 0%, hsla(233.0357142857143, 100%, 21.96078431372549%, 0) 100%), radial-gradient(at 49.79503256968116% 85.79196584605894%, hsla(246.7924528301887, 70.66666666666667%, 44.11764705882353%, 1) 0%, hsla(246.7924528301887, 70.66666666666667%, 44.11764705882353%, 0) 100%);}
+
+.card-content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    font-size: 1rem;
+}
+
+.small-head{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    gap: 3px;
+   
+
+}
+
+/* Küçük kartların bulunduğu kapsayıcı */
+.small-card-container {
+    display: flex;
+    flex-wrap: wrap; /* Kartların ekran boyutuna göre satır atlamasını sağlar */
+    justify-content: center;
+    gap: 20px; /* Kartlar arasındaki boşluk */
+    padding: 50px 20px;
+}
+
+/* Küçük kartlar */
+.small-card {
+    background:radial-gradient(at 86.93459383865547% 8.116375986059833%, hsla(192.85714285714286, 85.36585365853661%, 32.15686274509804%, 1) 0%, hsla(192.85714285714286, 85.36585365853661%, 32.15686274509804%, 0) 100%), radial-gradient(at 35.68450632544777% 5.131342280085782%, hsla(222.85714285714286, 85.36585365853661%, 32.15686274509804%, 1) 0%, hsla(222.85714285714286, 85.36585365853661%, 32.15686274509804%, 0) 100%), radial-gradient(at 39.070849193718146% 42.41280443074278%, hsla(252.8571428571429, 85.36585365853661%, 32.15686274509804%, 1) 0%, hsla(252.8571428571429, 85.36585365853661%, 32.15686274509804%, 0) 100%), radial-gradient(at 47.768762660062% 55.19825228747055%, hsla(192.85714285714286, 85.36585365853661%, 32.15686274509804%, 1) 0%, hsla(192.85714285714286, 85.36585365853661%, 32.15686274509804%, 0) 100%), radial-gradient(at 72.37439647195258% 65.9259150692403%, hsla(222.85714285714286, 85.36585365853661%, 32.15686274509804%, 1) 0%, hsla(222.85714285714286, 85.36585365853661%, 32.15686274509804%, 0) 100%), radial-gradient(at 78.6105674028747% 97.13625849799352%, hsla(252.8571428571429, 85.36585365853661%, 32.15686274509804%, 1) 0%, hsla(252.8571428571429, 85.36585365853661%, 32.15686274509804%, 0) 100%), radial-gradient(at 39.760024518271855% 36.05064608376396%, hsla(192.85714285714286, 85.36585365853661%, 32.15686274509804%, 1) 0%, hsla(192.85714285714286, 85.36585365853661%, 32.15686274509804%, 0) 100%), radial-gradient(at 75.37333751578576% 6.165644396272962%, hsla(222.85714285714286, 85.36585365853661%, 32.15686274509804%, 1) 0%, hsla(222.85714285714286, 85.36585365853661%, 32.15686274509804%, 0) 100%), radial-gradient(at 51.13399889513632% 86.16427481688575%, hsla(252.8571428571429, 85.36585365853661%, 32.15686274509804%, 1) 0%, hsla(252.8571428571429, 85.36585365853661%, 32.15686274509804%, 0) 100%);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    width: 200px; /* Kart genişliği */
+    text-align: center;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Hover efekti */
+.small-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+/* Responsive ayarlar - Ekran boyutuna göre kartları düzenleme */
+@media (max-width: 1200px) {
+    .small-card {
+        width: 180px; /* Daha küçük ekranlar için kart genişliği */
+    }
+}
+
+@media (max-width: 768px) {
+    .small-card {
+        width: 150px; /* Tablet ve küçük ekranlar için kart genişliği */
+    }
+}
+
+@media (max-width: 576px) {
+    .small-card-container {
+        flex-direction: column; /* Mobil ekranlar için kartlar alt alta dizilir */
+    }
+
+    .small-card {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+
+
+
+/* Responsive Ayarlar */
+@media (max-width: 768px) {
+    .search-box input {
+        width: 100%;
+    }
+
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+}
